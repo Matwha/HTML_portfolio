@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Matthew Whale &mdash; Matt's House</title>
-      <meta name="description" content="Is matt't house done" />
-      <meta name="author" content="Matthew Whale" />
-      <meta
-        name="keywords"
-        content="Is matt's house done"
-      />
-    </head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matthew Whale &mdash; Matt's House</title>
+    <meta name="description" content="Is Matt's house done?" />
+    <meta name="author" content="Matthew Whale" />
+    <meta name="keywords" content="Is Matt's house done" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="rsvp.js" defer></script>
   </head>
-  
-  <header>
-    <nav>
-        <b>
-            <a href="index.html">Home</a></b>
-        </b>
-    </nav>
-    <h1>  </h1>&nbsp;
-    <img src="Resources/image000000.JPG" alt="The Finished House" style="width: 500px;height: 400px;"/>
-
-    <h1>Yesss! but the back yard needs some work. 
-      Who whants to do ice cream on Friday at 6:30 PM </h1>
-  
-  </header>
   <body>
-
+    <header>
+      <nav>
+        <b><a href="index.html">Home</a></b>
+      </nav>
+    </header>
+    <div class="content">
+      <img src="Resources/image000000.JPG" alt="The Finished House" />
+      <div class="invite">
+        <h1>Yesss! The house is done, but the backyard needs some work.</h1>
+        <p>Who wants to come for ice cream on Thursday at 6:30 PM? EE team, you're invited!</p>
+        <div class="rsvp-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <textarea id="message" placeholder="Your Message" required>I'd love to come!</textarea>
+          <button onclick="sendEmail()">Send RSVP</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+
+
+
+
